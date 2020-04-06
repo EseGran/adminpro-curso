@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 // Módulos
-import { PageModule } from 'src/app/modules/pages/pages.module';
+import { PagesModule } from 'src/app/modules/pages/pages.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 import { AppComponent } from './app/app.component';
@@ -14,7 +14,7 @@ import { RegisterComponent } from './modules/auth/pages/register/register.compon
 import { NoPageFoundComponent } from 'src/app/shared/no-page-found/no-page-found.component';
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, SharedModule, PageModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, PagesModule],
   exports: [],
   declarations: [
     AppComponent,
