@@ -21,13 +21,13 @@ export class DonaGraphicComponent implements OnInit {
 
   ngOnInit(): void {
     this.doughnutChartLabels = this.graficos.labels;
-    console.log(`labels[${this.doughnutChartLabels}]: ${this.doughnutChartLabels}`);
+    // console.log(`labels[${this.doughnutChartLabels}]: ${this.doughnutChartLabels}`);
     this.doughnutChartData = this.graficos.data;
-    console.log(`data[]: ${this.doughnutChartData}`);
+    // console.log(`data[]: ${this.doughnutChartData}`);
     this.doughnutChartType = this.graficos.type;
-    console.log(`type[]: ${this.doughnutChartType}`);
+    // console.log(`type[]: ${this.doughnutChartType}`);
     this.graficosLeyenda = this.graficos.leyenda;
-    console.log(`leyenda[]: ${this.graficosLeyenda}`);
+    // console.log(`leyenda[]: ${this.graficosLeyenda}`);
   }
 
 
@@ -39,7 +39,7 @@ export class DonaGraphicComponent implements OnInit {
     event: MouseEvent;
     active: {}[];
   }): void {
-    console.log(event, active);
+    // console.log(event, active);
   }
 
   public chartHovered({
@@ -49,6 +49,6 @@ export class DonaGraphicComponent implements OnInit {
     event: MouseEvent;
     active: {}[];
   }): void {
-    console.log(event, active);
+    // console.log(event, active);
   }
 }

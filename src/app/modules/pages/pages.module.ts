@@ -16,9 +16,10 @@ import { IncreaserComponent } from './progress/components/increaser/increaser.co
 
 import { Graphics1Component } from 'src/app/modules/pages/graphics1/graphics1.component';
 import { DonaGraphicComponent } from './graphics1/components/dona-graphic/dona-graphic.component';
+import { SettingsModule } from 'src/app/modules/settings/settings.module';
 
 @NgModule({
-  imports: [RouterModule, SharedModule, PagesRoutingModule, ChartsModule],
+  imports: [RouterModule, SharedModule, SettingsModule, PagesRoutingModule, ChartsModule],
   exports: [DashboardComponent, ProgressComponent, Graphics1Component],
   declarations: [
     PagesComponent,

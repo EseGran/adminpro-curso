@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SettingsService } from 'src/app/modules/settings/services/settings.service';
 
 @Component({
   selector: 'admp-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'adminpro';
+  constructor(public settingsService: SettingsService) {}
 }

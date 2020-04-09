@@ -7,20 +7,19 @@ import { ProgressComponent } from 'src/app/modules/pages/progress/progress.compo
 import { Graphics1Component } from 'src/app/modules/pages/graphics1/graphics1.component';
 
 const pagesRoutes: Routes = [
-  { 
+  {
     path: '',
     component: PagesComponent,
     children: [
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'progress', component: ProgressComponent },
-  { path: 'graphics1', component: Graphics1Component },
-  { path: '', pathMatch: 'full', redirectTo: '/dashboard' },
-    ]
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'progress', component: ProgressComponent },
+      { path: 'graphics1', component: Graphics1Component },
+      { path: '', pathMatch: 'full', redirectTo: '/dashboard' },
+    ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(pagesRoutes)],
 })
-
 export class PagesRoutingModule {}
